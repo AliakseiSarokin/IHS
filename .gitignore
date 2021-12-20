@@ -1,0 +1,7 @@
+node_modules
+.idea
+tmp
+allure-report
+allure-results
+output
+/debug.log

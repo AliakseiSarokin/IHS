@@ -1,0 +1,15 @@
+export const videoLinks: any = {
+    homePage: ['IHS BOM Intelligence Overview', '1-Step BOM Import', 'Saved Import Configurations', 'Add Parts to BOMs',
+        'Modify Parts on a BOM', 'Custom Search Results Layouts', 'Parametric Search','Export or Report','Exporting from Datagrids and BOM Details','Exporting Part Details','Standard and Advanced Reports','Creating Custom Report Templates', 'California Proposition 65 Data',
+        'Research Request'],
+    partSearchResultPagePI:['Custom Search Results Layouts','Exporting from Datagrids and BOM Details','California Proposition 65 Data','Research Request'],
+    parametricPartSearchResultPagePI:['Parametric Search','Exporting from Datagrids and BOM Details','Research Request'],
+    partModalPagePI:['Parametric Search','Custom Search Results Layouts','Exporting Part Details','California Proposition 65 Data','Research Request'],
+    partSearchResultPageBI:['Add Parts to BOMs','Custom Search Results Layouts','Export or Report','Exporting from Datagrids and BOM Details','California Proposition 65 Data','Research Request'],
+    documentPartSearchResultPageBI:['Export or Report','Exporting from Datagrids and BOM Details'],
+    parametricPartSearchResultPageBI:['Add Parts to BOMs','Parametric Search','Export or Report','Exporting from Datagrids and BOM Details','Research Request'],
+    partModalPageBI:['Add Parts to BOMs','Parametric Search','Custom Search Results Layouts','Export or Report','Exporting from Datagrids and BOM Details','Exporting Part Details','California Proposition 65 Data','Research Request'],
+    bomPageBI:['Add Parts to BOMs','Modify Parts on a BOM','Export or Report','Exporting from Datagrids and BOM Details','Exporting Part Details','Standard and Advanced Reports','Creating Custom Report Templates','Research Request'],
+    reportsBI:['Standard and Advanced Reports','Creating Custom Report Templates'],
+    reportsCreateaTemplateBI:['California Proposition 65 Data','Research Request','Standard and Advanced Reports','Creating Custom Report Templates'],
+};

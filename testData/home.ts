@@ -1,0 +1,16 @@
+export const homeItems:any = {
+    expectedPanelTitles: [ 'BOMs', 'Reporting', 'Alerts', 'Part Search',
+        'My Dashboard', 'Other Tasks', 'Learn More', 'Corporate Data'],
+    bomsPanelLinks: [ 'Import a BOM', 'View My BOMs', 'Go to the BOM Vault', 'Go to the BOM Tree',
+        'Go to the BOM Tree with Details' ],
+    reportingPanelLinks: [ 'View All Reports', 'View My Reports', 'Generate a Report',
+        'View All Templates' ],
+    alertsPanelLinks:  [ 'Today', 'This Week', 'All', 'My BOMs' ],
+    searchPanelLinks: [ 'Search for Parts', 'Search for Documents', 'Where Used (Parts on BOMs)', 'Where Used (Substances)',
+        'Parametric Search' ],
+    myDashboardLinks:  [ 'BOM Summary', 'Vault Summary'],
+    otherTasksLinks: [ 'View Mfr Knowledge Base', 'View Part Knowledge Base',
+        'Move BOMs', 'User Preferences' ],
+    learnMoreLinks: [ 'What\'s New', 'IHS Customer Care', 'IHS Product Training' ],
+    corporateDateLinks: [ 'Search CPL', 'View CPL', 'Manage CPL', 'View Mfr Prefs' ],
+};

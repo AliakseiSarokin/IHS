@@ -1,0 +1,60 @@
+{
+  "name": "BI",
+  "version": "1.0.0",
+  "description": "test for BI project",
+  "scripts": {
+    "prestartserver": "webdriver-manager update --ie32 ",
+    "startserver": "webdriver-manager start --ie32",
+    "pretest": "webdriver-manager update",
+    "test": "tsc",
+    "preprotractor": "npm run test",
+    "protractor": "protractor tmp/protractor.conf.js",
+    "protractorWithServer": "npm-run-all -p -r startserver protractor",
+    "generateAllureReport": "allure generate",
+    "allureOpen": "allure open",
+    "serveAllureReport": "allure serve",
+    "preapi": "npm run test",
+    "api": "jest --runInBand",
+    "pushTeamsNotification": "npm run protractor -- --suite=pushNotification"
+  },
+  "dependencies": {
+    "papaparse": "^5.2.0",
+    "protractor": "^5.4.2",
+    "testrail-api": "^1.3.5",
+    "typescript": "^2.9.2",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.11",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^6.14.1",
+    "allure-commandline": "^2.8.1",
+    "cli": "^1.0.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-core": "^3.3.0",
+    "jasmine-reporters": "^2.4.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jest": "^23.6.0",
+    "jest-allure": "^0.1.1",
+    "jest-allure-reporter": "^1.2.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "mysql": "^2.16.0",
+    "npm-run-all": "^4.1.3",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "request": "^2.88.0",
+    "superagent": "^3.8.3",
+    "ts-jest": "^23.10.4",
+    "utf8": "^3.0.0",
+    "xml-parser": "^1.2.1"
+  },
+  "keywords": [
+    "tests",
+    "e2e",
+    "protractor",
+    "webdriver"
+  ]
+}

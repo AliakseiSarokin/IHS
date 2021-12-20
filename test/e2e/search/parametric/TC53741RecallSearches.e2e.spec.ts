@@ -1,0 +1,14 @@
+import {browser} from "protractor";
+import {buttonNames, fieldStatuses, meganavItems} from "../../../../testData/global";
+import {commonSearch, haystackSearchConst} from "../../../../testData/search";
+import {commonElements, dropdownElements, homeElements, searchElements} from "../../../../elements/elements";
+import {Dropdown} from "../../../../components/dropdown";
+import {ElementAttributes} from "../../../../utils/elementAttributes";
+import {ParametricSearchLogic} from "../../../../bussinesLayer/search/parametricSearchLogic";
+import {Login} from "../../../../components/login";
+import {Meganav} from "../../../../components/meganav";
+import {SearchLogic} from "../../../../bussinesLayer/search/searchLogic";
+const parametricSearchLogic: ParametricSearchLogic = new ParametricSearchLogic();
+const login = new Login();
+const meganav = new Meganav();
+const searchLogic: SearchLogic = new SearchLogic();

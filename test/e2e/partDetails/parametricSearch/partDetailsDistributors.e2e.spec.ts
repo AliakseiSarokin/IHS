@@ -1,0 +1,206 @@
+import {browser} from "protractor";
+import {Grid} from "../../../../components/grid";
+import {gridElements, partDetailsElements, searchElements} from "../../../../elements/elements";
+import {HelpLogic} from "../../../../bussinesLayer/help/helpLogic";
+import {Link} from "../../../../components/simple/link";
+import {Login} from "../../../../components/login";
+import {Meganav} from "../../../../components/meganav";
+import {Modal} from "../../../../components/modal";
+import {buttonNames, meganavItems, modalTitles} from "../../../../testData/global";
+import {ParametricSearchLogic} from "../../../../bussinesLayer/search/parametricSearchLogic";
+import {PartDetailsLogic} from "../../../../bussinesLayer/partDetails/partDetailsLogic";
+import {partDetailsData} from "../../../../testData/partDetails";
+import {VideoSliderLogic} from "../../../../bussinesLayer/home/videoSliderLogic";
+import {Waiters, Waiters as w} from "../../../../helper/waiters";
+import {Button} from "../../../../components/simple/button";
+
+const grid: Grid = new Grid();
+const helpLogic: HelpLogic = new HelpLogic();
+const link: Link = new Link();
+const login: Login = new Login();
+const meganav: Meganav = new Meganav();
+const modal: Modal = new Modal();
+const parametricSearchLogic: ParametricSearchLogic = new ParametricSearchLogic();
+const partDetailsLogic = new PartDetailsLogic();
+const button = new Button();
+
+describe('Part Details - Distributors - Parametric Search', () => {
+    let yellowRowsCount: number;
+    let normalRowsCount: number;
+    let averagePrice: string;
+    let averageLeadTime: string;
+
+    beforeAll(async ()=> {
+        browser.params.waitWebElementMaxTimeout = 360000;
+    });
+
+    afterAll(async ()=> {
+        browser.params.waitWebElementMaxTimeout = browser.params.defaultElementWaitTime;
+    });
+
+    it('should be documents icon in the BOM Details grid', async () => {
+        await login.loginWithDirectLink(browser.params.userAdminUrl);
+        await meganav.goToFeatureWithMeganavSubLinks(meganavItems.search,
+            meganavItems.searchSubItem.parametric, searchElements.parametric.commodities.get(0));
+        await parametricSearchLogic.performExactParametricSearch(0, 1, 4, 6, 0);
+        await w.waitUntilElementIsClickable(partDetailsElements.distribIcon.first());
+    });
+
+    it('should be tooltip for the Distributors icon', async () => {
+        await partDetailsLogic.iconTooltip(partDetailsElements.distribIcon, partDetailsData.tooltips.distributors);
+    });
+
+    it('should open part details modal by clicking on the Distributors icon', async () => {
+        await modal.openModalWithElement(partDetailsElements.distribIcon.get(2));
+        await w.waitUntilElementIsClickable(link.returnElementByLinkName(partDetailsData.leftNav.itemManufacturer));
+        await modal.checkSubstringModalTitleNames(modalTitles.partDetails, ':');
+    });
+
+    it('should open help panel and check title', async () => {
+        await helpLogic.openAndCheckHelpPanelTitle('View part details');
+    });
+
+    it('should open Video slider, play video and close', async () => {
+        await VideoSliderLogic.openVideoSlider();
+        await VideoSliderLogic.playingVideoChecking();
+        await VideoSliderLogic.closeVideoSlider();
+    });
+
+    it('should be attribute names in distributors grid', async () => {
+        const visibleCols: any = await partDetailsElements.allAttributeColumnName.getText();
+        await expect(partDetailsData.attributeNames).toEqual(visibleCols);
+    });
+
+    it('should be export dropdown', async () => {
+        await partDetailsLogic.exportDropdown();
+    });
+
+    it('should be transpose button', async () => {
+        await partDetailsLogic.switchTransposeButton();
+    });
+
+
+    //Disabled as the grid changes are done to distributors data.
+    xit('should be first distributors info column with average Price and average Lead Time (Weeks) values', async () => {
+        await partDetailsLogic.switchAuthorizedDistributorsLinkByName(partDetailsData.distributors.thirdInfoColumnText[1],
+            partDetailsData.distributors.showAll);
+        await Waiters.waitUntilElementIsDisplayed(gridElements.newGridRowsInModal.get(0));
+        const valueForParsing: string = await partDetailsElements.firstDistributorsInfoColumn.get(0).getText();
+        const numberAmount: string = (valueForParsing.split(' '))[2];
+        const fraction: number = (numberAmount.slice(numberAmount.indexOf('.')+1)).length;
+        //set lead time instead of Price because of bad grid
+        averagePrice = await partDetailsLogic.calculateAverageValue('Lead Time (Weeks)', fraction);
+        averageLeadTime = await partDetailsLogic.calculateAverageValue('Quantity in Stock', 2);
+        await expect(valueForParsing)
+            .toEqual(partDetailsData.distributors.firstInfoColumnText[0] + averagePrice +
+                partDetailsData.distributors.firstInfoColumnText[1]);
+        await expect(await partDetailsElements.firstDistributorsInfoColumn.get(1).getText())
+            .toEqual(partDetailsData.distributors.firstInfoColumnText[2] + Math.ceil(Number(averageLeadTime)) +
+                partDetailsData.distributors.firstInfoColumnText[3]);
+        await partDetailsLogic.switchAuthorizedDistributorsLinkByName(partDetailsData.distributors.showAll,
+            partDetailsData.distributors.thirdInfoColumnText[1]);
+        await Waiters.waitUntilElementIsDisplayed(await gridElements.newGridRowsInModal.get(0));
+        await w.waitUntilWorkingModalNotDisplayed();
+    });
+
+    it('should be second distributors info column', async () => {
+        await expect(await partDetailsElements.secondDistributorsInfoColumn.get(0).getText())
+            .toContain(partDetailsData.distributors.secondInfoColumnText[0]);
+        await expect(await partDetailsElements.secondDistributorsInfoColumn.get(1).getText())
+            .toContain(partDetailsData.distributors.secondInfoColumnText[1]);
+        await expect(await partDetailsElements.secondDistributorsInfoColumn.get(2).getText())
+            .toContain(partDetailsData.distributors.secondInfoColumnText[2]);
+        await expect(await partDetailsElements.substringSecondDistributorsInfoColumn.getCssValue('background-color'))
+            .toEqual(partDetailsData.distributors.secondInfoColumnText[3]);
+    });
+
+    it('should be third distributors info column', async () => {
+        await expect(await partDetailsElements.thirdDistributorsInfoColumn.get(0).getText())
+            .toContain(partDetailsData.distributors.thirdInfoColumnText[0]);
+        await expect(await partDetailsElements.thirdDistributorsInfoColumn.get(1).getText())
+            .toContain(partDetailsData.distributors.thirdInfoColumnText[1]);
+    });
+
+    it('should be option to click on Show Authorized Only link and display only authorised distributors in grid', async () => {
+        await w.waitUntilWorkingModalNotDisplayed();
+        await Waiters.waitUntilElementIsDisplayed(gridElements.newGridRowsInModal.get(0));
+        await w.waitUntilWorkingModalNotDisplayed();
+        await w.waitUntilElementIsClickable(partDetailsElements.cellLinks.first());
+        yellowRowsCount = await gridElements.yellowGridRows.count();
+        normalRowsCount = await gridElements.normalGridRows.count();
+        await partDetailsLogic.switchAuthorizedDistributorsLinkByName(partDetailsData.distributors.thirdInfoColumnText[1],
+            partDetailsData.distributors.showAll);
+        await Waiters.waitUntilElementIsDisplayed(gridElements.newGridRowsInModal.get(0));
+        await w.waitUntilWorkingModalNotDisplayed();
+        await w.waitUntilElementIsClickable(partDetailsElements.cellLinks.first());
+        await expect(await gridElements.newGridRowsInModal.count()).toEqual(yellowRowsCount);
+    });
+
+    it('should include only authorised distributors in Distributors Information segment - Print Preview All modal', async () => {
+        await partDetailsLogic.checkPrintModalIncludeTypeDistributors(buttonNames.printPreviewAll, yellowRowsCount);
+    });
+
+    it('should include only authorised distributors in Distributors Information segment - Print Distributors modal', async () => {
+        await partDetailsLogic.checkPrintModalIncludeTypeDistributors(buttonNames.printDistributors, yellowRowsCount);
+    });
+
+    it('should be option to click on Show All link and display all distributors in grid', async () => {
+        await partDetailsLogic.switchAuthorizedDistributorsLinkByName(partDetailsData.distributors.showAll,
+            partDetailsData.distributors.thirdInfoColumnText[1]);
+        await Waiters.waitUntilElementIsDisplayed(gridElements.newGridRowsInModal.get(0));
+        await w.waitUntilWorkingModalNotDisplayed();
+        await w.waitUntilElementIsClickable(partDetailsElements.cellLinks.first());
+        await expect(await gridElements.newGridRowsInModal.count()).toEqual(yellowRowsCount + normalRowsCount);
+        await expect(await gridElements.yellowGridRows.count()).toEqual(yellowRowsCount);
+        await expect(await gridElements.normalGridRows.count()).toEqual(normalRowsCount);
+    });
+
+    it('should include all distributors in Distributors Information segment - Print Preview All modal', async () => {
+        await partDetailsLogic.checkPrintModalIncludeTypeDistributors(buttonNames.printPreviewAll, yellowRowsCount + normalRowsCount);
+    });
+
+    it('should include all distributors in Distributors Information segment - Print Distributors modal', async () => {
+        await partDetailsLogic.checkPrintModalIncludeTypeDistributors(buttonNames.printDistributors, yellowRowsCount + normalRowsCount);
+    });
+
+    it('should be add button with dropdown list', async () => {
+        await partDetailsLogic.addDropdown();
+    });
+
+    it('should open Add to BOM(s) modal', async () => {
+        await partDetailsLogic.addToBomModal();
+    });
+
+    it('should open view alternates modal', async () => {
+        await partDetailsLogic.goToViewAlternatesFromPartDetailsBoms();
+    });
+
+    it('should open res request modal and be pre populated values', async () => {
+        await partDetailsLogic.researchRequestModalChecking();
+    });
+
+    it('should open Print Preview All modal and check modal title', async () => {
+        await partDetailsLogic.printModal();
+    });
+
+    it('should be specific options in print dropdown and subtitle in print preview modals', async () => {
+        await partDetailsLogic.checkingPrintPreviewModals();
+    });
+
+    it('should include the Average Price/Average lead Time in Distributors Information segment - Print Preview All modal', async () => {
+        averagePrice = (await partDetailsElements.firstDistributorsInfoColumn.get(0).getText()).split(' ')[2];
+        averageLeadTime = (await partDetailsElements.firstDistributorsInfoColumn.get(1).getText()).split(' ')[3];
+        await partDetailsLogic.checkPrintModalDistributorsPreamble(buttonNames.printPreviewAll,
+            partDetailsData.distributors.firstInfoColumnText, averagePrice, averageLeadTime);
+    });
+
+    it('should include the Average Price/Average lead Time in Distributors Information segment - Print Distributors modal', async () => {
+        await partDetailsLogic.checkPrintModalDistributorsPreamble(buttonNames.printDistributors,
+            partDetailsData.distributors.firstInfoColumnText, averagePrice, averageLeadTime);
+    });
+
+    it('should go to parametric by clicking on the search by example', async () => {
+        await partDetailsLogic.searchByExample();
+    });
+});
+
