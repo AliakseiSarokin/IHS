@@ -1,0 +1,304 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626258613391' stop='1626258656337'>
+    <name>Manage Users export selected user</name>
+    <title>Manage Users export selected user</title>
+    <test-cases>
+        <test-case start='1626258613391' status='passed' stop='1626258627288'>
+            <name>should export xls file for selected users</name>
+            <title>should export xls file for selected users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626258613392' status='passed' stop='1626258613654'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258613654' status='passed' stop='1626258615683'>
+                    <name>Hover on header icon and click on the Manage Users</name>
+                    <title>Hover on header icon and click on the Manage Users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258615684' status='passed' stop='1626258619751'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258619751' status='passed' stop='1626258619898'>
+                    <name>Check checkbox range from 0 to 1</name>
+                    <title>Check checkbox range from 0 to 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258619898' status='passed' stop='1626258623635'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258623635' status='passed' stop='1626258625045'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258623717' status='passed' stop='1626258623801'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258625045' status='passed' stop='1626258625148'>
+                    <name>Check Excel Spreadsheet (XLS) radio button</name>
+                    <title>Check Excel Spreadsheet (XLS) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258625148' status='passed' stop='1626258625937'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258625252' status='passed' stop='1626258625310'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258625953' status='passed' stop='1626258627023'>
+                    <name>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</name>
+                    <title>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258625953' status='passed' stop='1626258627023'>
+                            <name>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</name>
+                            <title>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626258625953' status='passed' stop='1626258626512'>
+                                    <name>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</name>
+                                    <title>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258627024' status='passed' stop='1626258627274'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626258627288' status='passed' stop='1626258641963'>
+            <name>should export csv file for selected users</name>
+            <title>should export csv file for selected users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626258627288' status='passed' stop='1626258628782'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258628782' status='passed' stop='1626258630662'>
+                    <name>Hover on header icon and click on the Manage Users</name>
+                    <title>Hover on header icon and click on the Manage Users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258630662' status='passed' stop='1626258634613'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258634613' status='passed' stop='1626258634802'>
+                    <name>Check checkbox range from 0 to 1</name>
+                    <title>Check checkbox range from 0 to 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258634802' status='passed' stop='1626258638435'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258638435' status='passed' stop='1626258639851'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258638520' status='passed' stop='1626258638623'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258639851' status='passed' stop='1626258639957'>
+                    <name>Check Comma-Separated Values (CSV) radio button</name>
+                    <title>Check Comma-Separated Values (CSV) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258639957' status='passed' stop='1626258640670'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258640053' status='passed' stop='1626258640115'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258640685' status='passed' stop='1626258641726'>
+                    <name>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</name>
+                    <title>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258640685' status='passed' stop='1626258641726'>
+                            <name>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</name>
+                            <title>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626258640685' status='passed' stop='1626258641222'>
+                                    <name>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</name>
+                                    <title>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258641727' status='passed' stop='1626258641953'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626258641963' status='passed' stop='1626258656337'>
+            <name>should export txt file for selected users</name>
+            <title>should export txt file for selected users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626258641963' status='passed' stop='1626258643043'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258643043' status='passed' stop='1626258644977'>
+                    <name>Hover on header icon and click on the Manage Users</name>
+                    <title>Hover on header icon and click on the Manage Users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258644977' status='passed' stop='1626258649006'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258649006' status='passed' stop='1626258649156'>
+                    <name>Check checkbox range from 0 to 1</name>
+                    <title>Check checkbox range from 0 to 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258649156' status='passed' stop='1626258652848'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258652848' status='passed' stop='1626258654235'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258652930' status='passed' stop='1626258653012'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258654235' status='passed' stop='1626258654341'>
+                    <name>Check Tab-Delimited Text (TXT) radio button</name>
+                    <title>Check Tab-Delimited Text (TXT) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626258654341' status='passed' stop='1626258655064'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258654432' status='passed' stop='1626258654503'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258655080' status='passed' stop='1626258656102'>
+                    <name>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</name>
+                    <title>[API] Get User by "S_USR_NAME" and "b4testadmin for {"username":"b4testadmin","password":"b4testadmin"}"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626258655080' status='passed' stop='1626258656102'>
+                            <name>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</name>
+                            <title>[API] Get User list for {"username":"b4testadmin","password":"b4testadmin"}</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626258655080' status='passed' stop='1626258655608'>
+                                    <name>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</name>
+                                    <title>[API] Send POST to endpoint: "group/users" with request body: {"count":false,"facet":[],"fields":[],"keyword":[],"meta":false,"mod":{"layout":"online"},"orderby":[],"q":"","request":false,"skip":0,"state":"","take":500}
+                                             for user {"username":"b4testadmin","password":"b4testadmin"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626258656102' status='passed' stop='1626258656329'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

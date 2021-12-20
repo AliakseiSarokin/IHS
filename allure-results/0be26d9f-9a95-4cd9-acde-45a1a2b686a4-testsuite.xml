@@ -1,0 +1,1267 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626266242022' stop='1626266378684'>
+    <name>Manage Users</name>
+    <title>Manage Users</title>
+    <test-cases>
+        <test-case start='1626266242022' status='passed' stop='1626266253195'>
+            <name>should go to manage users page</name>
+            <title>should go to manage users page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266242024' status='passed' stop='1626266250724'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266250724' status='passed' stop='1626266253191'>
+                    <name>Hover on header icon and click on the Manage Users</name>
+                    <title>Hover on header icon and click on the Manage Users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266253195' status='passed' stop='1626266254905'>
+            <name>should be instruction panel with option to hide/unhide</name>
+            <title>should be instruction panel with option to hide/unhide</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266254309' status='passed' stop='1626266254599'>
+                    <name>Hide instruction panel</name>
+                    <title>Hide instruction panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266254616' status='passed' stop='1626266254903'>
+                    <name>Unhide instruction panel</name>
+                    <title>Unhide instruction panel</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266254616' status='passed' stop='1626266254694'>
+                            <name>Click on the element By(css selector, .context-help-switch)</name>
+                            <title>Click on the element By(css selector, .context-help-switch)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266254905' status='passed' stop='1626266258395'>
+            <name>should open help panel and check title</name>
+            <title>should open help panel and check title</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266254905' status='passed' stop='1626266255123'>
+                    <name>Open Help panel</name>
+                    <title>Open Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266258316' status='passed' stop='1626266258393'>
+                    <name>Close Help panel</name>
+                    <title>Close Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266258395' status='passed' stop='1626266263038'>
+            <name>should sort for column A to Z </name>
+            <title>should sort for column A to Z </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266258395' status='passed' stop='1626266260854'>
+                    <name>Open header User Name filter box</name>
+                    <title>Open header User Name filter box</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266260584' status='passed' stop='1626266260621'>
+                            <name>move mouse over element By(css selector, .ag-header-cell-menu-button)</name>
+                            <title>move mouse over element By(css selector, .ag-header-cell-menu-button)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1626266260692' status='passed' stop='1626266260792'>
+                            <name>Click on the element By(css selector, .ag-header-cell-menu-button)</name>
+                            <title>Click on the element By(css selector, .ag-header-cell-menu-button)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266260854' status='passed' stop='1626266261235'>
+                    <name>Switch from filter column menu to sort column menu</name>
+                    <title>Switch from filter column menu to sort column menu</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266261002' status='passed' stop='1626266261062'>
+                            <name>Click on the element By(css selector, .ag-tabs-header .ag-tab .ag-header-cell-icon-wrapper-menu)</name>
+                            <title>Click on the element By(css selector, .ag-tabs-header .ag-tab .ag-header-cell-icon-wrapper-menu)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266261306' status='passed' stop='1626266263036'>
+                    <name>Select column option name '${optionName}'</name>
+                    <title>Select column option name '${optionName}'</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266261931' status='passed' stop='1626266262964'>
+                            <name>Click on the element by.cssContainingText(".ag-menu-option-text", "Sort Ascending")</name>
+                            <title>Click on the element by.cssContainingText(".ag-menu-option-text", "Sort Ascending")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266263038' status='passed' stop='1626266268324'>
+            <name>should remove filtering with clear all</name>
+            <title>should remove filtering with clear all</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266265118' status='passed' stop='1626266265229'>
+                    <name>Click on the element By(css selector, .toolbar-clear-all>a)</name>
+                    <title>Click on the element By(css selector, .toolbar-clear-all>a)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266268324' status='passed' stop='1626266272696'>
+            <name>should sort column Z to A</name>
+            <title>should sort column Z to A</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266268325' status='passed' stop='1626266270706'>
+                    <name>Open header User Name filter box</name>
+                    <title>Open header User Name filter box</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266270453' status='passed' stop='1626266270469'>
+                            <name>move mouse over element By(css selector, .ag-header-cell-menu-button)</name>
+                            <title>move mouse over element By(css selector, .ag-header-cell-menu-button)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1626266270539' status='passed' stop='1626266270639'>
+                            <name>Click on the element By(css selector, .ag-header-cell-menu-button)</name>
+                            <title>Click on the element By(css selector, .ag-header-cell-menu-button)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266270706' status='passed' stop='1626266270835'>
+                    <name>Switch from filter column menu to sort column menu</name>
+                    <title>Switch from filter column menu to sort column menu</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266270905' status='passed' stop='1626266272694'>
+                    <name>Select column option name '${optionName}'</name>
+                    <title>Select column option name '${optionName}'</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266271537' status='passed' stop='1626266272633'>
+                            <name>Click on the element by.cssContainingText(".ag-menu-option-text", "Sort Ascending")</name>
+                            <title>Click on the element by.cssContainingText(".ag-menu-option-text", "Sort Ascending")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266272696' status='passed' stop='1626266273943'>
+            <name>should remove filtering with clear all X</name>
+            <title>should remove filtering with clear all X</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266272779' status='passed' stop='1626266272871'>
+                    <name>Click on the element By(css selector, .svg-icon-x)</name>
+                    <title>Click on the element By(css selector, .svg-icon-x)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266273944' status='passed' stop='1626266274183'>
+            <name> should be exact column headers</name>
+            <title> should be exact column headers</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266274183' status='passed' stop='1626266282103'>
+            <name> should be modify dropdown</name>
+            <title> should be modify dropdown</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266274183' status='passed' stop='1626266276510'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266276280' status='passed' stop='1626266276354'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266276523' status='passed' stop='1626266276619'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266276523' status='passed' stop='1626266276581'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266276943' status='passed' stop='1626266279246'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266279056' status='passed' stop='1626266279110'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266279257' status='passed' stop='1626266279336'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266279257' status='passed' stop='1626266279299'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266279727' status='passed' stop='1626266282013'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266281815' status='passed' stop='1626266281862'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266282024' status='passed' stop='1626266282102'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266282024' status='passed' stop='1626266282064'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266282104' status='passed' stop='1626266288299'>
+            <name> should open modify user shade</name>
+            <title> should open modify user shade</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266282104' status='passed' stop='1626266284386'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266284195' status='passed' stop='1626266284242'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266284386' status='passed' stop='1626266288289'>
+                    <name>Open shade by clicking on the Modify User</name>
+                    <title>Open shade by clicking on the Modify User</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266284452' status='passed' stop='1626266284543'>
+                            <name>Click on the Modify User button</name>
+                            <title>Click on the Modify User button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266288299' status='passed' stop='1626266288845'>
+            <name>should open help panel and check opened subitem</name>
+            <title>should open help panel and check opened subitem</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266288300' status='passed' stop='1626266288594'>
+                    <name>Open Help panel</name>
+                    <title>Open Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266288770' status='passed' stop='1626266288843'>
+                    <name>Close Help panel</name>
+                    <title>Close Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266288845' status='passed' stop='1626266288941'>
+            <name> should be roles list</name>
+            <title> should be roles list</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266288941' status='passed' stop='1626266288987'>
+            <name> should be data grid in history section with columns</name>
+            <title> should be data grid in history section with columns</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266288987' status='passed' stop='1626266289010'>
+            <name> should be correctly formatted Date column values, DE382754</name>
+            <title> should be correctly formatted Date column values, DE382754</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266289010' status='passed' stop='1626266291854'>
+            <name>should be warning modal on leaving shade without saving changes, US275243</name>
+            <title>should be warning modal on leaving shade without saving changes, US275243</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266289033' status='passed' stop='1626266289098'>
+                    <name>Check Inactive radio button</name>
+                    <title>Check Inactive radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266289098' status='passed' stop='1626266289563'>
+                    <name>Open modal by clicking on the HOME link</name>
+                    <title>Open modal by clicking on the HOME link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266289601' status='passed' stop='1626266291852'>
+                    <name>Close modal with X button</name>
+                    <title>Close modal with X button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266290717' status='passed' stop='1626266290780'>
+                            <name>Click on the element By(css selector, .modal-header .pointer)</name>
+                            <title>Click on the element By(css selector, .modal-header .pointer)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266291854' status='passed' stop='1626266296265'>
+            <name> should close the shade</name>
+            <title> should close the shade</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266291854' status='passed' stop='1626266296264'>
+                    <name>Close shade by clicking on theCancel, do not Save Changes</name>
+                    <title>Close shade by clicking on theCancel, do not Save Changes</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266291932' status='passed' stop='1626266291991'>
+                            <name>Click on the Cancel, do not Save Changes button</name>
+                            <title>Click on the Cancel, do not Save Changes button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266296265' status='passed' stop='1626266304160'>
+            <name> should be reassign items inactive when several rows are selected</name>
+            <title> should be reassign items inactive when several rows are selected</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266296266' status='passed' stop='1626266298559'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266298351' status='passed' stop='1626266298410'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266298571' status='passed' stop='1626266298660'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266298571' status='passed' stop='1626266298625'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266298970' status='passed' stop='1626266301258'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266301063' status='passed' stop='1626266301113'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266301268' status='passed' stop='1626266301345'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266301268' status='passed' stop='1626266301309'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266301793' status='passed' stop='1626266304072'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266303879' status='passed' stop='1626266303932'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266304081' status='passed' stop='1626266304158'>
+                    <name>Close toolbar dropdown by clicking on Modify</name>
+                    <title>Close toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266304081' status='passed' stop='1626266304123'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266304160' status='passed' stop='1626266309256'>
+            <name> should open reassign items shade</name>
+            <title> should open reassign items shade</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266304160' status='passed' stop='1626266306436'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266306252' status='passed' stop='1626266306298'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266306436' status='passed' stop='1626266309254'>
+                    <name>Open shade by clicking on the Reassign Items</name>
+                    <title>Open shade by clicking on the Reassign Items</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266306499' status='passed' stop='1626266306579'>
+                            <name>Click on the Reassign Items button</name>
+                            <title>Click on the Reassign Items button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266309256' status='passed' stop='1626266309761'>
+            <name>should open help panel and check opened subitem</name>
+            <title>should open help panel and check opened subitem</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266309256' status='passed' stop='1626266309518'>
+                    <name>Open Help panel</name>
+                    <title>Open Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266309686' status='passed' stop='1626266309759'>
+                    <name>Close Help panel</name>
+                    <title>Close Help panel</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266309761' status='passed' stop='1626266309933'>
+            <name> should select all items in the list with select all checkbox</name>
+            <title> should select all items in the list with select all checkbox</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266309835' status='passed' stop='1626266309892'>
+                    <name>Click on the element By(css selector, [for="checkall"])</name>
+                    <title>Click on the element By(css selector, [for="checkall"])</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266309933' status='failed' stop='1626266310025'>
+            <name> should be users list in reassign items shade</name>
+            <title> should be users list in reassign items shade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected $[0] = 'b4testuser (b4testuser)' to equal 'b4testuser'.
+                Expected $[1] = 'BOM4 Test Group Admin (b4testadmin)' to equal 'BOM4 Test Group Admin'.
+                Expected $[2] = 'BOM4 Test KB Admin (b4testkbadmin)' to equal 'BOM4 Test KB Admin'.
+                Expected $[3] = 'BOM4 Test Restricted (b4testrestricted)' to equal 'BOM4 Test Restricted'.
+                Expected $[4] = 'BOM4 Test User Admin (b4testuseradmin)' to equal 'BOM4 Test User Admin'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (D:\IHS\bomtest\tmp\test\e2e\administration\manageUsers.e2e.spec.js:149:14)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (D:\IHS\bomtest\tmp\test\e2e\administration\manageUsers.e2e.spec.js:4:58)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1626266310025' status='passed' stop='1626266311190'>
+            <name> should be active and inactive reassign button </name>
+            <title> should be active and inactive reassign button </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266310350' status='passed' stop='1626266310402'>
+                    <name>Click on the element By(css selector, [for="checkall"])</name>
+                    <title>Click on the element By(css selector, [for="checkall"])</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266310450' status='passed' stop='1626266310540'>
+                    <name>Check BOM4 Test Restricted (b4testrestricted) radio button</name>
+                    <title>Check BOM4 Test Restricted (b4testrestricted) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266310619' status='passed' stop='1626266310679'>
+                    <name>Click on the element By(css selector, .form-group .checkbox label)</name>
+                    <title>Click on the element By(css selector, .form-group .checkbox label)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266310735' status='passed' stop='1626266310792'>
+                    <name>Click on the element By(css selector, .form-group .checkbox label)</name>
+                    <title>Click on the element By(css selector, .form-group .checkbox label)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266310852' status='passed' stop='1626266310927'>
+                    <name>Click on the element By(css selector, .form-group .checkbox label)</name>
+                    <title>Click on the element By(css selector, .form-group .checkbox label)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266311002' status='passed' stop='1626266311059'>
+                    <name>Click on the element By(css selector, .form-group .checkbox label)</name>
+                    <title>Click on the element By(css selector, .form-group .checkbox label)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266311119' status='passed' stop='1626266311176'>
+                    <name>Click on the element By(css selector, .form-group .checkbox label)</name>
+                    <title>Click on the element By(css selector, .form-group .checkbox label)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266311190' status='passed' stop='1626266316999'>
+            <name> should open leave confirm modal</name>
+            <title> should open leave confirm modal</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266311190' status='passed' stop='1626266312620'>
+                    <name>Open modal by clicking on the Done button</name>
+                    <title>Open modal by clicking on the Done button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266311278' status='passed' stop='1626266311340'>
+                            <name>Click on the Done button</name>
+                            <title>Click on the Done button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266312656' status='passed' stop='1626266314867'>
+                    <name>Close modal with X button</name>
+                    <title>Close modal with X button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266313763' status='passed' stop='1626266313822'>
+                            <name>Click on the element By(css selector, .modal-header .pointer)</name>
+                            <title>Click on the element By(css selector, .modal-header .pointer)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266314867' status='passed' stop='1626266316268'>
+                    <name>Open modal by clicking on the Done button</name>
+                    <title>Open modal by clicking on the Done button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266314959' status='passed' stop='1626266315011'>
+                            <name>Click on the Done button</name>
+                            <title>Click on the Done button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266316268' status='passed' stop='1626266316997'>
+                    <name>Close modal with No button</name>
+                    <title>Close modal with No button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266316381' status='passed' stop='1626266316438'>
+                            <name>Click on the No button</name>
+                            <title>Click on the No button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266316999' status='passed' stop='1626266322069'>
+            <name> hould close the reassign items shade</name>
+            <title> hould close the reassign items shade</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266316999' status='passed' stop='1626266318383'>
+                    <name>Open modal by clicking on the Done button</name>
+                    <title>Open modal by clicking on the Done button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266317089' status='passed' stop='1626266317137'>
+                            <name>Click on the Done button</name>
+                            <title>Click on the Done button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266318383' status='passed' stop='1626266322066'>
+                    <name>Close shade by clicking on theYes</name>
+                    <title>Close shade by clicking on theYes</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266318454' status='passed' stop='1626266318509'>
+                            <name>Click on the Yes button</name>
+                            <title>Click on the Yes button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266322069' status='passed' stop='1626266324640'>
+            <name> should be filter dropdown</name>
+            <title> should be filter dropdown</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266322070' status='passed' stop='1626266324448'>
+                    <name>Open toolbar dropdown by clicking on Filter</name>
+                    <title>Open toolbar dropdown by clicking on Filter</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266324220' status='passed' stop='1626266324299'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Filter")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Filter")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266324544' status='passed' stop='1626266324639'>
+                    <name>Close toolbar dropdown by clicking on Filter</name>
+                    <title>Close toolbar dropdown by clicking on Filter</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266324544' status='passed' stop='1626266324600'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Filter")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Filter")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266324640' status='passed' stop='1626266327092'>
+            <name>should have unhide button with dropdown list  -  Manage Users</name>
+            <title>should have unhide button with dropdown list  -  Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266324654' status='passed' stop='1626266326971'>
+                    <name>Open toolbar dropdown by clicking on Unhide</name>
+                    <title>Open toolbar dropdown by clicking on Unhide</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266326748' status='passed' stop='1626266326821'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Unhide")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Unhide")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266327002' status='passed' stop='1626266327090'>
+                    <name>Close toolbar dropdown by clicking on Unhide</name>
+                    <title>Close toolbar dropdown by clicking on Unhide</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266327002' status='passed' stop='1626266327055'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Unhide")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Unhide")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266327092' status='passed' stop='1626266330010'>
+            <name>should hide the column -  Manage Users</name>
+            <title>should hide the column -  Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266327092' status='passed' stop='1626266330009'>
+                    <name>Hide User Name column</name>
+                    <title>Hide User Name column</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266327107' status='passed' stop='1626266329549'>
+                            <name>Open header User Name filter box</name>
+                            <title>Open header User Name filter box</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626266329274' status='passed' stop='1626266329301'>
+                                    <name>move mouse over element By(css selector, .ag-header-cell-menu-button)</name>
+                                    <title>move mouse over element By(css selector, .ag-header-cell-menu-button)</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1626266329377' status='passed' stop='1626266329479'>
+                                    <name>Click on the element By(css selector, .ag-header-cell-menu-button)</name>
+                                    <title>Click on the element By(css selector, .ag-header-cell-menu-button)</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1626266329550' status='passed' stop='1626266329679'>
+                            <name>Switch from filter column menu to sort column menu</name>
+                            <title>Switch from filter column menu to sort column menu</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1626266329679' status='passed' stop='1626266329876'>
+                            <name>Click on "Hide this column"</name>
+                            <title>Click on "Hide this column"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626266329799' status='passed' stop='1626266329876'>
+                                    <name>Click on the element by.cssContainingText(".ag-menu-option-text", "Hide this column")</name>
+                                    <title>Click on the element by.cssContainingText(".ag-menu-option-text", "Hide this column")</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266330011' status='passed' stop='1626266332573'>
+            <name>should unhide the column with Unhide All - Manage Users</name>
+            <title>should unhide the column with Unhide All - Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266330011' status='passed' stop='1626266332334'>
+                    <name>Open toolbar dropdown by clicking on Unhide</name>
+                    <title>Open toolbar dropdown by clicking on Unhide</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266332128' status='passed' stop='1626266332178'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Unhide")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Unhide")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266332397' status='passed' stop='1626266332481'>
+                    <name>Click on the element by.buttonText("Unhide All")</name>
+                    <title>Click on the element by.buttonText("Unhide All")</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266332573' status='passed' stop='1626266335058'>
+            <name>should be filters - Manage Users</name>
+            <title>should be filters - Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266332574' status='passed' stop='1626266334917'>
+                    <name>Open toolbar dropdown by clicking on Filter</name>
+                    <title>Open toolbar dropdown by clicking on Filter</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266334698' status='passed' stop='1626266334745'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Filter")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Filter")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266334974' status='passed' stop='1626266335056'>
+                    <name>Close toolbar dropdown by clicking on Filter</name>
+                    <title>Close toolbar dropdown by clicking on Filter</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266334974' status='passed' stop='1626266335019'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Filter")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button", "Filter")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266335058' status='passed' stop='1626266337533'>
+            <name>should export xls file for all users</name>
+            <title>should export xls file for all users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266335058' status='passed' stop='1626266336479'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266335149' status='passed' stop='1626266335229'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266336480' status='passed' stop='1626266336608'>
+                    <name>Check Excel Spreadsheet (XLS) radio button</name>
+                    <title>Check Excel Spreadsheet (XLS) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266336608' status='passed' stop='1626266337404'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266336715' status='passed' stop='1626266336772'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266337533' status='passed' stop='1626266339820'>
+            <name>should export csv file for all users</name>
+            <title>should export csv file for all users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266337534' status='passed' stop='1626266338978'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266337657' status='passed' stop='1626266337722'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266338978' status='passed' stop='1626266339083'>
+                    <name>Check Comma-Separated Values (CSV) radio button</name>
+                    <title>Check Comma-Separated Values (CSV) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266339083' status='passed' stop='1626266339815'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266339189' status='passed' stop='1626266339249'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266339820' status='passed' stop='1626266342092'>
+            <name>should export txt file for all users</name>
+            <title>should export txt file for all users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266339820' status='passed' stop='1626266341244'>
+                    <name>Open modal by clicking on the Export button</name>
+                    <title>Open modal by clicking on the Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266339912' status='passed' stop='1626266340004'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266341244' status='passed' stop='1626266341343'>
+                    <name>Check Tab-Delimited Text (TXT) radio button</name>
+                    <title>Check Tab-Delimited Text (TXT) radio button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266341343' status='passed' stop='1626266342087'>
+                    <name>Close modal with Export button</name>
+                    <title>Close modal with Export button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266341453' status='passed' stop='1626266341509'>
+                            <name>Click on the Export button</name>
+                            <title>Click on the Export button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266342092' status='passed' stop='1626266359569'>
+            <name>should inactivate selected user</name>
+            <title>should inactivate selected user</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266342092' status='passed' stop='1626266342396'>
+                    <name>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</name>
+                    <title>Login to the BOM Intelligence with URL: http://4dsqa.ihs.com/bom-intelligence/?username=b4testuseradmin&amp;password=b4testuseradmin#/home</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266342396' status='passed' stop='1626266344402'>
+                    <name>Hover on header icon and click on the Manage Users</name>
+                    <title>Hover on header icon and click on the Manage Users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266344403' status='passed' stop='1626266348718'>
+                    <name>check checkbox by b4testuser in User Name new grid</name>
+                    <title>check checkbox by b4testuser in User Name new grid</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266344403' status='passed' stop='1626266348548'>
+                            <name>return array of cell value by column name</name>
+                            <title>return array of cell value by column name</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1626266348548' status='passed' stop='1626266348718'>
+                            <name>Check checkbox range from 5 to 6</name>
+                            <title>Check checkbox range from 5 to 6</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266348718' status='passed' stop='1626266351052'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266350830' status='passed' stop='1626266350892'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266351068' status='passed' stop='1626266351494'>
+                    <name>Click on the Inactivatelink and wait for element</name>
+                    <title>Click on the Inactivatelink and wait for element</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266351601' status='passed' stop='1626266355719'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266355720' status='passed' stop='1626266359544'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266359569' status='passed' stop='1626266374313'>
+            <name>should activate selected user</name>
+            <title>should activate selected user</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266359570' status='passed' stop='1626266363545'>
+                    <name>check checkbox by b4testuser in User Name new grid</name>
+                    <title>check checkbox by b4testuser in User Name new grid</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266359570' status='passed' stop='1626266363390'>
+                            <name>return array of cell value by column name</name>
+                            <title>return array of cell value by column name</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1626266363390' status='passed' stop='1626266363545'>
+                            <name>Check checkbox range from 5 to 6</name>
+                            <title>Check checkbox range from 5 to 6</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266363546' status='passed' stop='1626266365896'>
+                    <name>Open toolbar dropdown by clicking on Modify</name>
+                    <title>Open toolbar dropdown by clicking on Modify</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266365657' status='passed' stop='1626266365725'>
+                            <name>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</name>
+                            <title>Click on the element by.cssContainingText(".toolbar-button-text, .toolbar-button-title, .toolbar-button-text, part-search-results-filter span", "Modify")</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266365897' status='passed' stop='1626266366311'>
+                    <name>Click on the Activatelink and wait for element</name>
+                    <title>Click on the Activatelink and wait for element</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266366410' status='passed' stop='1626266370516'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266370517' status='passed' stop='1626266374308'>
+                    <name>return array of cell value by column name</name>
+                    <title>return array of cell value by column name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266374313' status='passed' stop='1626266375026'>
+            <name>should be active inactive deleted  -   Manage Users</name>
+            <title>should be active inactive deleted  -   Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266374332' status='passed' stop='1626266374632'>
+                    <name>Check checkbox range from 1 to 3</name>
+                    <title>Check checkbox range from 1 to 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266374644' status='passed' stop='1626266374884'>
+                    <name>Check checkbox range from 1 to 3</name>
+                    <title>Check checkbox range from 1 to 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1626266374884' status='passed' stop='1626266375009'>
+                    <name>Check checkbox range from 1 to 2</name>
+                    <title>Check checkbox range from 1 to 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1626266375026' status='passed' stop='1626266378683'>
+            <name>should open close delete modal -   Manage Users</name>
+            <title>should open close delete modal -   Manage Users</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1626266375027' status='passed' stop='1626266376445'>
+                    <name>Open modal by clicking on the Delete button</name>
+                    <title>Open modal by clicking on the Delete button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266375117' status='passed' stop='1626266375184'>
+                            <name>Click on the Delete button</name>
+                            <title>Click on the Delete button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1626266376466' status='passed' stop='1626266378681'>
+                    <name>Close modal with X button</name>
+                    <title>Close modal with X button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626266377563' status='passed' stop='1626266377624'>
+                            <name>Click on the element By(css selector, .modal-header .pointer)</name>
+                            <title>Click on the element By(css selector, .modal-header .pointer)</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
